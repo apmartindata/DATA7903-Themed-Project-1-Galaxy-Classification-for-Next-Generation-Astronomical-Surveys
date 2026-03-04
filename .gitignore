@@ -1,0 +1,51 @@
+# Byte-compiled / caches
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtualenvs
+.venv/
+env/
+venv/
+
+# Python packaging/build
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# Jupyter
+.ipynb_checkpoints
+# If you want to keep notebook outputs out of commits, use nbstripout or the pre-commit hook
+*.nbconvert.ipynb
+
+# Data (do NOT commit raw/large data)
+data/
+data/raw/
+data/processed/
+# keep small sample or placeholder file (data/sample or data/.gitkeep) if needed
+
+# Common large/binary scientific files - track via Git LFS if needed
+*.fits
+*.h5
+*.hdf5
+*.npy
+*.npz
+*.bin
+
+# Secrets / credentials / environment
+.env
+.env.local
+secrets.json
+credentials.json
+*.pem
+*.key
+
+# IDE / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log

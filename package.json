@@ -1,0 +1,32 @@
+{
+  "name": "data-science-project",
+  "version": "0.1.0",
+  "description": "Manifest for a data science project. Python dependencies are listed under pipDependencies; use the setup script to create a venv and install them.",
+  "engines": {
+    "python": ">=3.9"
+  },
+  "scripts": {
+    "setup": "python -m venv .venv && . .venv/bin/activate && python -m pip install --upgrade pip && python -m pip install -r requirements.txt",
+    "freeze": "python -m pip freeze > requirements.txt",
+    "start": "echo \"Activate the .venv and run your project scripts\""
+  },
+  "author": "",
+  "license": "MIT",
+  "pipDependencies": {
+    "numpy": ">=1.24.0",
+    "pandas": ">=2.0.0",
+    "scikit-learn": ">=1.2.0",
+    "scipy": ">=1.10.0",
+    "matplotlib": ">=3.7.0",
+    "seaborn": ">=0.12.0",
+    "pillow": ">=9.5.0",
+    "opencv-python": ">=4.7.0",
+    "scikit-image": ">=0.20.0",
+    "tqdm": ">=4.65.0",
+    "requests": ">=2.31.0"
+  },
+  "sciServer": {
+    "sciserver": ">=0.1.0",
+    "SciServer.Mango": ">=0.1.0"
+  }
+}
