@@ -105,7 +105,9 @@ The script will:
 
 Downloaded CSVs land in `input/tables/` and are ready for the notebook.
 
-### 2. Run the exploration notebook
+### 2. Run models and scripts that process data
+
+There is only one jypter notebook that uses data at the moment. It is exploration.ipynb which goes over preliminary data cleanup and processing.
 
 Open `notebooks/exploratory_data_analysis/exploration.ipynb` in VS Code (or Jupyter) and run all cells from top to bottom.
 
