@@ -90,7 +90,9 @@ pip install -r requirements.txt
 
 ## Quick Start
 
-### 1. Download SDSS data from SciServer CasJobs
+### 1. Load Project Data
+
+Download SDSS data from SciServer CasJobs
 
 Run the CasJobs runner script from the **repo root**. It will prompt for your SciServer credentials (or read them from environment variables `SCISERVER_USER` / `SCISERVER_PASS`):
 
@@ -105,7 +107,7 @@ The script will:
 
 Downloaded CSVs land in `input/tables/` and are ready for the notebook.
 
-### 2. Run models and scripts that process data
+### 2. Run Notebooks and Scripts that Process Data
 
 There is only one jypter notebook that uses data at the moment. It is exploration.ipynb which goes over preliminary data cleanup and processing.
 
