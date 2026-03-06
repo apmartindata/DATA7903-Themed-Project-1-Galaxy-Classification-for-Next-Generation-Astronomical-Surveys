@@ -1,7 +1,7 @@
 # Galaxy Classification for Next-Generation Astronomical Surveys
 ### DATA7903 Capstone Project
 
-Machine-learning pipeline for galaxy morphology classification using SDSS photometric and spectroscopic data merged with Galaxy Zoo vote labels.
+This project aims to build a scalable galaxy classification system that combines three different data sources: SDSS tabular photometry, DESI Legacy Survey image cutouts, and SDSS FITS spectra. The goal is to train an ensemble machine-learning pipeline that classifies galaxies into three morphological classes; Elliptical, Spiral, and Merger using Galaxy Zoo vote labels as the ground truth
 
 ---
 
