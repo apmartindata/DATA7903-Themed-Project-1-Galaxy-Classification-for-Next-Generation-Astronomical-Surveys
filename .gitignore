@@ -19,19 +19,41 @@ dist/
 # If you want to keep notebook outputs out of commits, use nbstripout or the pre-commit hook
 *.nbconvert.ipynb
 
-# Data (do NOT commit raw/large data)
+# Legacy data folder — no longer used, all data moved to input/tables/
 data/
-data/raw/
-data/processed/
-# keep small sample or placeholder file (data/sample or data/.gitkeep) if needed
+
+# Input data — ignore data folders; input/queries/ is tracked (SQL files pushed to repo)
+input/images/
+input/spectra/
+input/tables/
+input/training_sets/
+!input/images/.gitkeep
+!input/spectra/.gitkeep
+!input/tables/.gitkeep
+!input/training_sets/.gitkeep
+
+# Results — ignore generated outputs; keep folder structure via .gitkeep
+results/evaluation/*.csv
+results/prediction/*.csv
+results/prediction/*.parquet
+results/report/*.pdf
+
+# Saved Models — ignore weights/checkpoints; keep folder structure via .gitkeep
+saved_models/
+!saved_models/**/.gitkeep
 
 # Common large/binary scientific files - track via Git LFS if needed
 *.fits
+*.fit
 *.h5
 *.hdf5
 *.npy
 *.npz
 *.bin
+*.pkl
+*.pt
+*.pth
+*.ckpt
 
 # Secrets / credentials / environment
 .env
@@ -46,6 +68,10 @@ credentials.json
 .idea/
 .DS_Store
 Thumbs.db
+
+# Local context folder — private notes, reference docs, AI context files
+# Not committed; existence only visible in .gitignore
+local/
 
 # Logs
 *.log
