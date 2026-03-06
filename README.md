@@ -164,13 +164,3 @@ Open `notebooks/exploratory_data_analysis/exploration.ipynb` in VS Code (or Jupy
 
 ---
 
-## Recommended Additional Folders
-
-The following would complement this structure for a full data science project:
-
-| Folder | Purpose |
-|--------|---------|
-| `logs/` | Training logs and experiment run history (e.g. MLflow `mlruns/`) |
-| `config/` | Hyperparameter configs, YAML/JSON settings for reproducibility |
-| `docs/` | Literature notes, data dictionaries, and project documentation |
-
